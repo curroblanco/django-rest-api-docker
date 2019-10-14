@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "a7be0af2-c6db-4afa-9ff9-69e3f664ce8c",
+		"name": "DjangoREST API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Superhero",
+			"item": [
+				{
+					"name": "CREATE Superhero",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hero_name\": \"Hulk\",\n    \"gender\": \"M\",\n    \"real_name\": \"Bruce Banner\",\n    \"publisher\": 1\n}"
+						},
+						"url": {
+							"raw": "localhost:8000/superhero/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"superhero",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST Superhero",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/superhero/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"superhero",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Superhero",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/superhero/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"superhero",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Publisher",
+			"item": [
+				{
+					"name": "CREATE Publisher",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Test name\",\n    \"founder\": \"Test founder\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8000/publisher/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"publisher",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIST Publisher",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/publisher/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"publisher",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Publisher",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000/publisher/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"publisher",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
